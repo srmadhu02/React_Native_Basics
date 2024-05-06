@@ -16,6 +16,7 @@ const Navbar = () => {
 
 const styles = StyleSheet.create({
   navbar: {
+    marginTop:26,
     backgroundColor: '#007bff',
     flexDirection: 'row', // Arrange items horizontally
     justifyContent: 'space-between', // Space items evenly along the main axis (horizontally)
