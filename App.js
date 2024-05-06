@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,Image,Alert, SafeAreaView,Button,Platform} from 'react-native';
-import Neighbours from './Pages/Neighbours';
+import Neighbours from './Screens/Neighbours';
 import { useDimensions , useDeviceOrientation} from "@react-native-community/hooks";
 import Navbar from "./Components/Navbar";
 import WelcomeScreen from './App/screens/WelcomeScreen';
@@ -18,6 +18,7 @@ import AppTextInput from './App/components/AppTextInput';
 import AppPicker from './App/components/AppPicker';
 import LoginScreen from './App/screens/LoginScreen';
 import ListingEditScreen from './App/screens/ListingEditScreen';
+import TodoScreen from './Screens/TodoScreen';
 
 
 export default function App() {
@@ -25,9 +26,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       
-< ListingEditScreen/>
-  <StatusBar style="auto" />
-      <Neighbours />  
+    <TodoScreen/>
  
      
     </SafeAreaView>
@@ -37,6 +36,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+   
   
   
   
